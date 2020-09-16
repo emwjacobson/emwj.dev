@@ -1,0 +1,44 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+<p class="h1">Portfolio</p><hr>
+
+{% for project in projects %}
+<div class="card p-1">
+  <div class="row no-gutters align-items-center">
+    <div class="col-md-4" style="border: 1px solid #ececec; border-radius: 3px;">
+      <img src="https://i.imgur.com/THug83T.png" class="card-img">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{ project.title }}</h5>
+        <hr>
+        <p class="card-text">{{ project.description }}</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <strong>Links</strong>
+              <ul>
+                {% for link in project.links %}
+                <li><a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.text }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+            <div class="col-md-6" style="border-left: 1px solid lightgrey;">
+              <strong>Technologies</strong>
+              <ul>
+                {% for tech in project.technologies %}
+                <li>{{ tech }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% empty %}
+No projects...
+{% endfor %}
+{% endblock content %}
