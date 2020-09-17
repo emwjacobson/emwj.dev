@@ -25,7 +25,7 @@ projects = [
         ],
         'links': [
             { 'text': 'Demo', 'url': 'https://mc.emwj.dev/' },
-            { 'text': 'GitHub', 'url': 'https://github.com/emwjacobson/MCHoster'}
+            { 'text': 'GitHub', 'url': 'https://github.com/emwjacobson/MCHoster' }
         ]
     },
     {
