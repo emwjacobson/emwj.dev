@@ -31,7 +31,7 @@ projects = [
     {
         'image': 'https://i.imgur.com/K6mEpUM.png',
         'title': 'Pypc2',
-        'description': 'For a while I was really into Project Cars 2, so I created a custom dashboard to be displayed while driving. It includes the car\'s current RPM, speed, and gear, as well as a meter showing when to shift, current throttle/braking, and g-forces applied to the car.',
+        'description': 'For a while I was really into Project Cars 2, so I created a custom dashboard to be displayed while driving. It uses data from the game to display the car\'s current RPM, speed, and gear, as well as a meter showing when to shift, current throttle/braking, and g-forces applied to the car.',
         'technologies': [
             "Python",
             "Pygame"
