@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+import os, random, string
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,25 +21,27 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'kwj+4t&1)ndduaoi7=x-dg68f5030hcdc!+s!!n@4x-vroavuh'
+SECRET_KEY = os.environ.get("SECRET_KEY", "".join([random.choice(string.ascii_letters + string.digits) for i in range(24)]))
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
 
-ALLOWED_HOSTS = ["192.168.1.111"]
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "").split(",")
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'app.apps.AppConfig',
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+    # 'django.contrib.admin',
+
+ADMIN_ENABLED = False
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

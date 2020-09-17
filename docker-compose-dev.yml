@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+    django:
+        build: ./web
+        ports:
+            - 8080:8080
+        volumes:
+            - ./web:/app
+        environment:
+            - SECRET_KEY=MakeThisALongRandomStringForProduction
+            - DEBUG=True
+            - ALLOWED_HOSTS=192.168.1.111
