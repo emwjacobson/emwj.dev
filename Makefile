@@ -1,6 +1,6 @@
 
 up:
-	docker-compose -p portfolio -f docker-compose-prod.yml up --build
+	docker-compose -p portfolio -f docker-compose-prod.yml up --build -d
 
 up-dev:
 	docker-compose -p portfolio -f docker-compose-dev.yml up --build
