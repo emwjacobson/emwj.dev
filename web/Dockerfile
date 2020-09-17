@@ -29,6 +29,4 @@ RUN useradd user
 RUN chown -R user:user /app
 USER user
 
-EXPOSE 8080
-
 CMD ["entrypoint.sh"]
