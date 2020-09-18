@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 projects = [
     {
-        'image': 'https://i.imgur.com/lv9cuij.png',
+        'image': 'https://i.imgur.com/lY40B7X.png',
         'title': 'This Website!',
         'description': 'With a bit of downtime between my Summer Research Program and my first Quarter at UC Riverside, I decided it was time to make myself a basic little portfolio website where I can show off some of the work that I am proud to have made.',
         'technologies': [
