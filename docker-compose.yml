@@ -7,16 +7,18 @@ services:
         environment:
             - SECRET_KEY=MakeThisALongRandomStringForProduction
             - DEBUG=False
-            - ALLOWED_HOSTS=192.168.1.111
+            - ALLOWED_HOSTS=your.website.here
+        restart: always
     nginx:
         image: nginx:1.19
         depends_on:
             - django
         ports:
-            - 80:80
+            - 8081:80
         volumes:
             - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
             - static:/serve/static
+        restart: always
 
 volumes:
     static:

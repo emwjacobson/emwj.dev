@@ -9,4 +9,4 @@ services:
         environment:
             - SECRET_KEY=MakeThisALongRandomStringForProduction
             - DEBUG=True
-            - ALLOWED_HOSTS=192.168.1.111
+            - ALLOWED_HOSTS=*

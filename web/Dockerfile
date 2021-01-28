@@ -10,9 +10,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget && \
     rm -rf /var/lib/apt/lists/*
 
-# RUN wget https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh -P /bin && \
-#     chmod 755 /bin/wait-for-it.sh
-
 COPY scripts /scripts
 RUN chmod +x /scripts/*
 
@@ -24,6 +21,7 @@ COPY portfolio portfolio
 COPY manage.py .
 
 RUN useradd user
+RUN mkdir -p /app/static
 RUN chown -R user:user /app
 USER user
 
