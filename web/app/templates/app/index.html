@@ -16,17 +16,19 @@
         <p class="card-text text-justify">{{ project.description }}</p>
         <div class="container">
           <div class="row">
+            {% if project.links %}
             <div class="col-md-6" style="border-left: 1px solid lightgrey;">
               <strong>Links</strong>
-              <ul>
+              <ul style="margin-bottom: 0px;">
                 {% for link in project.links %}
                 <li><a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.text }}</a></li>
                 {% endfor %}
               </ul>
             </div>
+            {% endif %}
             <div class="col-md-6" style="border-left: 1px solid lightgrey;">
               <strong>Technologies</strong>
-              <ul>
+              <ul style="margin-bottom: 0px;">
                 {% for tech in project.technologies %}
                 <li>{{ tech }}</li>
                 {% endfor %}
