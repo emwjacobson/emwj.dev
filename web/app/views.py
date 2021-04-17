@@ -18,7 +18,7 @@ projects = [
     {
         'image': 'https://i.imgur.com/MC4wYrG.png',
         'title': 'Self-hosted Homelab',
-        'description': 'I run a Dell R510 with dual 12C/24T Xeon X5650 processors and 112 GB of Memory. I have Proxmox installed and use it to virtualize many servers. Some services I run are: PiHole for DNS Adblocking, a NFS, Plex for home media streaming, a machine for running Docker images, NextCloud, and Nginx as a reverse proxy.',
+        'description': 'I run a Dell R510 with dual 6C/12T Xeon X5650 processors and 112 GB of Memory. I have Proxmox installed and use it to virtualize many servers. Some services I run are: PiHole for DNS Adblocking, a NFS, Plex for home media streaming, a machine for running Docker images, NextCloud, and Nginx as a reverse proxy.',
         'technologies': [
             "Proxmox",
             "Nginx",
