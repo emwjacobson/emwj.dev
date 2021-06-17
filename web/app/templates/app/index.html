@@ -1,46 +1,68 @@
 {% extends 'app/base.html' %}
+{% load static %}
 
 {% block content %}
-<p class="h1 pt-2">Portfolio</p><hr>
+<main>
+  <section class="about">
+    <div class="about-text">
+      <p style="text-indent: 0px;">Hello There!</p>
 
-{% for project in projects %}
-<div class="card p-1 mb-2">
-  <div class="row no-gutters align-items-center">
-    <div class="col-md-4" style="border: 1px solid #ececec; border-radius: 3px;">
-      <img src="{{ project.image }}" class="card-img" loading="lazy">
+      <p>
+        My name is Emerson. I am currently a 23 year old student attending the University of California, Riverside.
+        I am studying Computer Science, with plans to graduate with a Bachelors degree Spring of 2022.
+        I transferred to UCR from El Camino College where I earned an Associates in Mathematics.
+      </p>
+      <p>
+        Some hobbies of mine include video games, mainly racing simulators, as well as programming miscellaneous side projects. I'm a big fan of robotics, having participated as both a student and mentor on my High School's FRC Team. At El Camino College I was elected President of our ACM Chapter, where the other officers and I organized many events such as attending hack-a-thons, code camps and college tours. We also hosted an annual programming contest.
+      </p>
+      <p>
+        As for the future, I am interested in pursuing a career related to robotics, embedded systems, or other backend work.
+      </p>
+
     </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">{{ project.title }}</h5>
-        <hr>
-        <p class="card-text text-justify">{{ project.description }}</p>
-        <div class="container">
-          <div class="row">
-            {% if project.links %}
-            <div class="col-md-6" style="border-left: 1px solid lightgrey;">
-              <strong>Links</strong>
-              <ul style="margin-bottom: 0px;">
-                {% for link in project.links %}
-                <li><a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.text }}</a></li>
-                {% endfor %}
-              </ul>
-            </div>
-            {% endif %}
-            <div class="col-md-6" style="border-left: 1px solid lightgrey;">
-              <strong>Technologies</strong>
-              <ul style="margin-bottom: 0px;">
-                {% for tech in project.technologies %}
-                <li>{{ tech }}</li>
-                {% endfor %}
-              </ul>
-            </div>
+    <div class="about-image">
+      <img src="{% static 'portrait.jpg' %}" alt="Portrait">
+    </div>
+  </section>
+
+  <section class="projects">
+    {% for project in projects %}
+    <div class="project">
+      <div class="project-text">
+        <h1 style="text-decoration: underline;">{{ project.title }}</h1>
+        <p>
+          {{ project.description }}
+        </p>
+        <div class="project-info">
+          {% if project.links %}
+          <div class="project-links">
+            <strong style="text-decoration: underline;">Links</strong>
+            <ul>
+              {% for link in project.links %}
+              <li><a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" style="font-weight: 600;">{{ link.text }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+          <div class="project-technologies">
+            <strong style="text-decoration: underline;">Technologies</strong>
+            <ul>
+              {% for tech in project.technologies %}
+              <li>{{ tech }}</li>
+              {% endfor %}
+            </ul>
           </div>
         </div>
+
+      </div>
+      <div class="project-image">
+        <img src="{{ project.image }}" loading="lazy">
       </div>
     </div>
-  </div>
-</div>
-{% empty %}
-No projects...
-{% endfor %}
+    {% empty %}
+    No projects...
+    {% endfor %}
+  </section>
+</main>
+
 {% endblock content %}
