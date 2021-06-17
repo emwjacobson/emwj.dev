@@ -39,7 +39,7 @@
             <strong style="text-decoration: underline;">Links</strong>
             <ul>
               {% for link in project.links %}
-              <li><a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" style="font-weight: 600;">{{ link.text }}</a></li>
+              <li><a href="{{ link.url }}" class="project-link" target="_blank" rel="noopener noreferrer" style="font-weight: 600;">{{ link.text }}</a></li>
               {% endfor %}
             </ul>
           </div>
