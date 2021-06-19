@@ -142,10 +142,7 @@ img{
 }
 
 @media (max-width: 1200px) {
-    .project {
-        flex-direction: column;
-    }
-    .project:nth-child(odd) {
+    .project, .project:nth-child(4n) {
         flex-direction: column;
     }
     .project-image {

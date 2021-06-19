@@ -4,7 +4,7 @@
 {% block content %}
 <main>
   <section class="about">
-    <div class="about-text" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
+    <div class="about-text">
       <p style="text-indent: 0px;">Hello There!</p>
 
       <p>
@@ -20,7 +20,7 @@
       </p>
 
     </div>
-    <div class="about-image" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+    <div class="about-image">
       <img src="{% static 'portrait.jpg' %}" alt="Portrait">
     </div>
   </section>
@@ -28,7 +28,7 @@
   <section class="projects">
     {% for project in projects %}
     <h1>{{ project.title }}</h1>
-    <div class="project" data-aos="{% if forloop.counter|divisibleby:2 %}fade-left{% else %}fade-right{% endif %}" data-aos-duration="1000" data-aos-once="true">
+    <div class="project">
       <div class="project-image">
         <img src="{{ project.image }}" loading="lazy">
       </div>
