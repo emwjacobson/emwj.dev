@@ -60,14 +60,13 @@ img{
 }
 
 .about-image > img {
-    border-radius: 5px;
+    border-radius: 3px;
     max-height: 100vh;
     object-fit: contain;
 }
 
 .projects {
     padding: 10px 50px;
-    background-color: #3688BF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,7 +79,7 @@ img{
     justify-content: center;
 }
 
-.project:nth-child(odd) {
+.project:nth-child(4n) {
     flex-direction: row-reverse;
 }
 
@@ -98,7 +97,7 @@ img{
 }
 
 .project-image > img {
-    border-radius: 5px;
+    border-radius: 3px;
     max-height: 100vh;
     object-fit: contain;
 }
@@ -112,11 +111,11 @@ img{
 }
 
 .project-link, .project-link:visited {
-    color: #c0c0c0;
+    color: #2B91DE;
 }
 
 .project-link:hover {
-    color: #9e9e9e;
+    color: #205f8f;
 }
 
 .project-links > ul {
