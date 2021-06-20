@@ -134,14 +134,10 @@ img{
     margin: 0;
 }
 
-
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
     .about {
         flex-direction: column-reverse;
     }
-}
-
-@media (max-width: 1200px) {
     .project, .project:nth-child(4n) {
         flex-direction: column;
     }
