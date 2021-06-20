@@ -3,22 +3,12 @@ from django.templatetags.static import static
 
 projects = [
     {
-        'image': static('site.png'),
-        'title': 'This Website!',
-        'description': 'With a bit of downtime between my Summer Research Program and my first Quarter at the University of California, Riverside, I decided it was time to make myself a portfolio website. Here I can show off some of the work that I am proud to have made.',
-        'technologies': [
-            "Docker & Docker Compose",
-            "Django"
-        ],
-        'links': [
-            { 'text': 'Demo', 'url': 'https://emwj.dev/' },
-            { 'text': 'GitHub', 'url': 'https://github.com/emwjacobson/emwj.dev'}
-        ]
-    },
-    {
         'image': static('r510.png'),
         'title': 'Self-hosted Homelab',
-        'description': 'I run a Dell R510 with dual 6C/12T Xeon X5650 processors and 112 GB of Memory. I have Proxmox installed and use it to virtualize many servers. Some services I run are: PiHole for DNS Adblocking, an NFS for file storage, Plex for home media streaming, a machine for running Docker images, NextCloud, and Nginx as a reverse proxy.',
+        'description': 'I run a Dell R510 with dual 6C/12T Xeon X5650 processors and 112 GB of Memory. \
+            I have Proxmox installed and use it to virtualize many servers. Some services I run are: \
+            PiHole for DNS Adblocking, an NFS for file storage, Plex for home media streaming, a machine \
+            for running Docker images, NextCloud, and Nginx as a reverse proxy.',
         'technologies': [
             "Proxmox (Hypervisor)",
             "Nginx (Reverse Proxy)",
@@ -31,7 +21,10 @@ projects = [
     {
         'image': static('mchost.png'),
         'title': 'MCHoster',
-        'description': 'This project aims to create on-demand Minecraft Servers. I used Docker to streamline development and make the creation/destruction of servers extremely easy. I used Django as the Frontend as I wanted to learn more about it. I later expanded on this project to use Docker Swarm, allowing for High Availability and distribution of the load across multiple servers.',
+        'description': 'This project aims to create on-demand Minecraft Servers. I used Docker to streamline \
+            development and make the creation/destruction of servers extremely easy. I used Django as the \
+            Frontend as I wanted to learn more about it. I later expanded on this project to use Docker Swarm, \
+            allowing for High Availability and distribution of the load across multiple servers.',
         'technologies': [
             "Docker (Compose & Swarm)",
             "Django"
@@ -39,6 +32,37 @@ projects = [
         'links': [
             { 'text': 'Demo', 'url': 'https://mc.emwj.dev/' },
             { 'text': 'GitHub', 'url': 'https://github.com/emwjacobson/MCHoster' }
+        ]
+    },
+    {
+        'image': static('agx.jpg'),
+        'title': 'Undergrad Research',
+        'description': 'At UCR I have been working under Marcus Chow and Daniel Wong investigating power usage \
+            of hetergenous embedded systems, specifically Nvidia\'s Jetson AGX and Nano. Using Dynamic Frequency \
+            Voltage Scaling (DVFS), reduce usage is reduced while still offering good performance-per-watt. \
+            This can lead to longer usage if running off battery or in a power-constrained environment.',
+        'technologies': [
+            'CUDA',
+            'TensorRT',
+            'C++'
+        ],
+        'links': [
+            { 'text': 'DVFS Presentation', 'url': static('DVFS.pdf') },
+            { 'text': 'Marcus Chow', 'url': 'https://www.cs.ucr.edu/~mchow009/'},
+            { 'text': 'Daniel Wong', 'url': 'http://www.danielwong.org/' }
+        ]
+    },
+    {
+        'image': static('site.png'),
+        'title': 'This Website!',
+        'description': 'With a bit of downtime between my Summer Research Program and my first Quarter at the University of California, Riverside, I decided it was time to make myself a portfolio website. Here I can show off some of the work that I am proud to have made.',
+        'technologies': [
+            "Docker & Docker Compose",
+            "Django"
+        ],
+        'links': [
+            { 'text': 'Demo', 'url': 'https://emwj.dev/' },
+            { 'text': 'GitHub', 'url': 'https://github.com/emwjacobson/emwj.dev'}
         ]
     },
     {

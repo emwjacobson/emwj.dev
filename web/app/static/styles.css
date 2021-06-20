@@ -12,7 +12,7 @@ a {
     text-decoration: none;
 }
 
-img{
+img {
     height: 100%;
     width: 100%;
     object-fit: contain;
@@ -73,13 +73,24 @@ img{
     align-items: center;
 }
 
+.projects > h1 {
+    font-size: 200%;
+    text-decoration: underline;
+}
+
+.projects > h3 {
+    margin: 0px;
+    padding-top: 10px;
+    text-decoration: underline;
+}
+
 .project {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.project:nth-child(4n) {
+.project:nth-child(4n+1) {
     flex-direction: row-reverse;
 }
 

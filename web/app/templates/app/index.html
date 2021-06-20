@@ -26,8 +26,9 @@
   </section>
 
   <section class="projects">
+    <h1>Projects</h1>
     {% for project in projects %}
-    <h1>{{ project.title }}</h1>
+    <h3>{{ project.title }}</h3>
     <div class="project">
       <div class="project-image">
         <img src="{{ project.image }}" loading="lazy">
