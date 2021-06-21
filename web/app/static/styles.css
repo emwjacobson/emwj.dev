@@ -1,0 +1,280 @@
+/* https://coolors.co/424242-373737-3d9ae1-ff6978-dce1de */
+
+body {
+    background-color: #DCE1DE;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    padding: 0px;
+    margin: 0px;
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+    font-weight: 600;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    flex: 0 0 80px;
+    padding: 15px;
+    color: #2B91DE;
+    text-align: center;
+    font-size: medium;
+}
+
+.nav-link > a, a:visited {
+    color: #2B91DE;
+}
+
+.nav-link > a > .bi {
+    font-size: 10px;
+    vertical-align: .25em;
+}
+
+.nav-link > a:hover {
+    color: #205f8f;
+}
+
+/* Begin Home */
+
+.about {
+    background-color: #60ACE6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    padding: 50px;
+}
+
+.about-text > p {
+    text-indent: 40px;
+}
+
+.about-image {
+    padding: 20px;
+    flex: 0 0 400px;
+}
+
+.about-image > img {
+    border-radius: 3px;
+    max-height: 100vh;
+    object-fit: contain;
+}
+
+.projects {
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects > h1 {
+    font-size: 200%;
+    text-decoration: underline;
+}
+
+.projects > h3 {
+    margin: 0px;
+    padding-top: 10px;
+    text-decoration: underline;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project:nth-child(4n+1) {
+    flex-direction: row-reverse;
+}
+
+.project-text {
+    padding: 20px;
+}
+
+.project-image {
+    padding: 20px;
+    flex: 0 0 700px;
+}
+
+.project-image > img {
+    border-radius: 3px;
+    max-height: 100vh;
+    object-fit: contain;
+}
+
+.project-info {
+    display: flex;
+}
+
+.project-links {
+    padding: 20px;
+}
+
+.project-link, .project-link:visited {
+    color: #2B91DE;
+}
+
+.project-link:hover {
+    color: #205f8f;
+}
+
+.project-links > ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.project-technologies {
+    padding: 20px;
+}
+
+.project-technologies > ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+@media (max-width: 1200px) {
+    .about {
+        flex-direction: column-reverse;
+    }
+    .project, .project:nth-child(4n+1) {
+        flex-direction: column;
+    }
+    .project-image {
+        padding: 20px;
+        flex: 0 0 0;
+    }
+    .projects {
+        padding: 10px;
+    }
+}
+
+/* End Home */
+
+
+/* Start Research */
+
+.research {
+    background-color: #60ACE6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.research > .info {
+    width: 60%;
+}
+
+.research > .info > .title {
+    font-size: 2em;
+}
+
+.research > .info a, .info a:visited {
+    color: rgb(75, 75, 75);
+}
+
+.research > .info a:hover {
+    color: rgb(29, 29, 29);
+}
+
+@media (max-width: 1000px) {
+    .research {
+        padding: 10px;
+    }
+}
+
+/* End Research */
+
+
+
+/* Start Education */
+
+.school {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.school > .banner {
+    position: relative;
+    width: 100%;
+}
+
+.school > .banner > img.banner-image {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.school > .banner > .banner-text {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: 500;
+    text-shadow: 2px 2px 3px #000000;
+    font-size: 5vw;
+    text-align: center;
+    line-height: 40vh;
+}
+
+.school > .text {
+    width: 80%;
+}
+
+.school > .text > .courses {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.school > .text > .courses > .course-list {
+    margin: 20px;
+}
+
+.school > .text > .courses > .course-list > h4 {
+    margin: 0px;
+}
+
+@media (max-width: 1000px) {
+    .school > .text {
+        width: 90%;
+    }
+    .school > .banner > .banner-text {
+        font-size: 5vw;
+        line-height: 20vh;
+    }
+    .school > .banner > img.banner-image {
+        height: 20vh;
+    }
+    .school > .text > .courses {
+        flex-direction: column;
+        align-items: center;
+    }
+    .school > .text > .courses > .course-list {
+        margin: 0px;
+    }
+}
+
+/* End Education */
