@@ -8,7 +8,25 @@ Emerson Jacobson - Research
 {% block content %}
 <main>
   <section class="research">
-    Ay yo, work in progress :)
+    <div class="info">
+      <div class="title">
+        Research Topics
+      </div>
+      <p>
+        At UCR I have been working under <a href="https://www.cs.ucr.edu/~mchow009/">Marcus Chow</a> and
+        <a href="http://www.danielwong.org/">Daniel Wong</a> investigating the power usage of hetergenous embedded systems.
+        My work has been using Nvidia's Jetson AGX and Nano.
+      </p>
+      <p>
+        Using Dynamic Frequency Voltage Scaling (DVFS), we can change the frequency that a processor is running at to give us lower
+        overall power consumption while also providing the performance that we need. This can lead to increased life when run in
+        an environment where power is a limitation, such as battery powered devices.
+      </p>
+      <p>
+        During the quarter, I did a presentation talking about past DVFS papers as well as my plans for implementing them on the
+        Jetson devices. The slides for this presentation is available <a href="{% static 'DVFS.pdf' %}">here</a>!
+      </p>
+    </div>
   </section>
 </main>
 

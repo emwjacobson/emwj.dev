@@ -34,24 +34,24 @@ projects = [
             { 'text': 'GitHub', 'url': 'https://github.com/emwjacobson/MCHoster' }
         ]
     },
-    {
-        'image': static('agx.jpg'),
-        'title': 'Undergrad Research',
-        'description': 'At UCR I have been working under Marcus Chow and Daniel Wong investigating power usage \
-            of hetergenous embedded systems, specifically Nvidia\'s Jetson AGX and Nano. Using Dynamic Frequency \
-            Voltage Scaling (DVFS), reduce usage is reduced while still offering good performance-per-watt. \
-            This can lead to longer usage if running off battery or in a power-constrained environment.',
-        'technologies': [
-            'CUDA',
-            'TensorRT',
-            'C++'
-        ],
-        'links': [
-            { 'text': 'DVFS Presentation', 'url': static('DVFS.pdf') },
-            { 'text': 'Marcus Chow', 'url': 'https://www.cs.ucr.edu/~mchow009/'},
-            { 'text': 'Daniel Wong', 'url': 'http://www.danielwong.org/' }
-        ]
-    },
+    # {
+    #     'image': static('agx.jpg'),
+    #     'title': 'Undergrad Research',
+    #     'description': 'At UCR I have been working under Marcus Chow and Daniel Wong investigating power usage \
+    #         of hetergenous embedded systems, specifically Nvidia\'s Jetson AGX and Nano. Using Dynamic Frequency \
+    #         Voltage Scaling (DVFS), reduce usage is reduced while still offering good performance-per-watt. \
+    #         This can lead to longer usage if running off battery or in a power-constrained environment.',
+    #     'technologies': [
+    #         'CUDA',
+    #         'TensorRT',
+    #         'C++'
+    #     ],
+    #     'links': [
+    #         { 'text': 'DVFS Presentation', 'url': static('DVFS.pdf') },
+    #         { 'text': 'Marcus Chow', 'url': 'https://www.cs.ucr.edu/~mchow009/'},
+    #         { 'text': 'Daniel Wong', 'url': 'http://www.danielwong.org/' }
+    #     ]
+    # },
     {
         'image': static('site.png'),
         'title': 'This Website!',

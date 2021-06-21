@@ -177,6 +177,29 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 50px;
+}
+
+.research > .info {
+    width: 90%;
+}
+
+.research > .info > .title {
+    font-size: 2em;
+}
+
+.research > .info a, .info a:visited {
+    color: rgb(75, 75, 75);
+}
+
+.research > .info a:hover {
+    color: rgb(29, 29, 29);
+}
+
+@media (max-width: 1000px) {
+    .research {
+        padding: 10px;
+    }
 }
 
 /* End Research */
