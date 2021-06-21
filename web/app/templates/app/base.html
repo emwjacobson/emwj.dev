@@ -17,9 +17,24 @@
 
 <nav>
   <div class="nav-links">
-    <div class="nav-link"><a href="{% static 'EmersonJacobsonResume.pdf' %}">Resume</a></div>
-    <div class="nav-link"><a href="https://github.com/emwjacobson/">Github</a></div>
-    <div class="nav-link"><a href="https://www.linkedin.com/in/emwjacobson/">LinkedIn</a></div>
+    <div class="nav-link">
+      <a href="{% url 'index' %}">Home</a>
+    </div>
+    <div class="nav-link">
+      <a href="{% url 'research' %}">Research</a>
+    </div>
+    <div class="nav-link">
+      <a href="{% url 'education' %}">Education</a>
+    </div>
+    <div class="nav-link">
+      <a href="{% static 'EmersonJacobsonResume.pdf' %}">Resume</a>
+    </div>
+    <div class="nav-link">
+      <a href="https://github.com/emwjacobson/">Github</a>
+    </div>
+    <div class="nav-link">
+      <a href="https://www.linkedin.com/in/emwjacobson/">LinkedIn</a>
+    </div>
   </div>
 </nav>
 

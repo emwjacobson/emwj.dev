@@ -82,5 +82,8 @@ projects = [
 def index(request):
     return render(request, 'app/index.html', {'projects': projects})
 
-def about(request):
-    return render(request, 'app/about.html')
+def research(request):
+    return render(request, 'app/research.html')
+
+def education(request):
+    return render(request, 'app/education.html')

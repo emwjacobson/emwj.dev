@@ -5,7 +5,7 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     padding: 0px;
     margin: 0px;
-    overflow-x: hidden;
+    font-size: large;
 }
 
 a {
@@ -23,20 +23,31 @@ img {
     margin: 0px;
     justify-content: center;
     font-weight: 600;
+    flex-wrap: wrap;
 }
 
 .nav-link {
-    margin: 20px;
+    flex: 0 0 80px;
+    padding: 15px;
     color: #2B91DE;
+    text-align: center;
+    font-size: medium;
 }
 
 .nav-link > a, a:visited {
     color: #2B91DE;
 }
 
+.nav-link > a > .bi {
+    font-size: 10px;
+    vertical-align: .25em;
+}
+
 .nav-link > a:hover {
     color: #205f8f;
 }
+
+/* Begin Home */
 
 .about {
     background-color: #60ACE6;
@@ -51,7 +62,6 @@ img {
 
 .about-text > p {
     text-indent: 40px;
-    font-size: large;
 }
 
 .about-image {
@@ -96,10 +106,6 @@ img {
 
 .project-text {
     padding: 20px;
-}
-
-.project-text {
-    font-size: large;
 }
 
 .project-image {
@@ -160,3 +166,92 @@ img {
         padding: 10px;
     }
 }
+
+/* End Home */
+
+
+/* Start Research */
+
+.research {
+    background-color: #60ACE6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End Research */
+
+
+
+/* Start Education */
+
+.school {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.school > .banner {
+    position: relative;
+    width: 100%;
+}
+
+.school > .banner > img.banner-image {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.school > .banner > .banner-text {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: 500;
+    text-shadow: 2px 2px 3px #000000;
+    font-size: 5vw;
+    text-align: center;
+    line-height: 40vh;
+}
+
+.school > .text {
+    width: 80%;
+}
+
+.school > .text > .courses {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.school > .text > .courses > .course-list {
+    margin: 20px;
+}
+
+.school > .text > .courses > .course-list > h4 {
+    margin: 0px;
+}
+
+@media (max-width: 1000px) {
+    .school > .text {
+        width: 90%;
+    }
+    .school > .banner > .banner-text {
+        font-size: 5vw;
+        line-height: 20vh;
+    }
+    .school > .banner > img.banner-image {
+        height: 20vh;
+    }
+    .school > .text > .courses {
+        flex-direction: column;
+        align-items: center;
+    }
+    .school > .text > .courses > .course-list {
+        margin: 0px;
+    }
+}
+
+/* End Education */
