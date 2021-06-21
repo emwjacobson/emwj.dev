@@ -155,7 +155,7 @@ img {
     .about {
         flex-direction: column-reverse;
     }
-    .project, .project:nth-child(4n) {
+    .project, .project:nth-child(4n+1) {
         flex-direction: column;
     }
     .project-image {
@@ -181,7 +181,7 @@ img {
 }
 
 .research > .info {
-    width: 90%;
+    width: 60%;
 }
 
 .research > .info > .title {
