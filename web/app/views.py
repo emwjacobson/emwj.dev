@@ -3,7 +3,7 @@ from django.templatetags.static import static
 
 projects = [
     {
-        'image': static('r510.png'),
+        'image': static('r510.jpg'),
         'title': 'Self-hosted Homelab',
         'description': 'I run a Dell R510 with dual 6C/12T Xeon X5650 processors and 112 GB of Memory. \
             I have Proxmox installed and use it to virtualize many servers. Some services I run are: \
@@ -19,7 +19,7 @@ projects = [
         'links': []
     },
     {
-        'image': static('mchost.png'),
+        'image': static('mchost.jpg'),
         'title': 'MCHoster',
         'description': 'This project aims to create on-demand Minecraft Servers. I used Docker to streamline \
             development and make the creation/destruction of servers extremely easy. I used Django as the \
@@ -34,26 +34,8 @@ projects = [
             { 'text': 'GitHub', 'url': 'https://github.com/emwjacobson/MCHoster' }
         ]
     },
-    # {
-    #     'image': static('agx.jpg'),
-    #     'title': 'Undergrad Research',
-    #     'description': 'At UCR I have been working under Marcus Chow and Daniel Wong investigating power usage \
-    #         of hetergenous embedded systems, specifically Nvidia\'s Jetson AGX and Nano. Using Dynamic Frequency \
-    #         Voltage Scaling (DVFS), reduce usage is reduced while still offering good performance-per-watt. \
-    #         This can lead to longer usage if running off battery or in a power-constrained environment.',
-    #     'technologies': [
-    #         'CUDA',
-    #         'TensorRT',
-    #         'C++'
-    #     ],
-    #     'links': [
-    #         { 'text': 'DVFS Presentation', 'url': static('DVFS.pdf') },
-    #         { 'text': 'Marcus Chow', 'url': 'https://www.cs.ucr.edu/~mchow009/'},
-    #         { 'text': 'Daniel Wong', 'url': 'http://www.danielwong.org/' }
-    #     ]
-    # },
     {
-        'image': static('site.png'),
+        'image': static('site.jpg'),
         'title': 'This Website!',
         'description': 'With a bit of downtime between my Summer Research Program and my first Quarter at the University of California, Riverside, I decided it was time to make myself a portfolio website. Here I can show off some of the work that I am proud to have made.',
         'technologies': [
@@ -66,7 +48,7 @@ projects = [
         ]
     },
     {
-        'image': static('pc2.png'),
+        'image': static('pc2.jpg'),
         'title': 'Pypc2',
         'description': 'For a while, I was really into Project Cars 2, so I created a custom dashboard to be displayed while driving. It uses data from the game to display the car\'s current RPM, speed, and gear. It also has a meter showing when to shift, current throttle/braking, and g-forces applied to the car.',
         'technologies': [
