@@ -7,7 +7,7 @@ services:
         environment:
             - SECRET_KEY=MakeThisALongRandomStringForProduction
             - DEBUG=False
-            - ALLOWED_HOSTS=your.website.here
+            - ALLOWED_HOSTS=your.website.com,subdomain.website.com
         restart: always
     nginx:
         image: nginx:1.19
